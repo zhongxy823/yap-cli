@@ -1,0 +1,40 @@
+{
+  "name": "yap-cli",
+  "version": "1.0.0",
+  "description": "can do many things",
+  "main": "index.js",
+  "repository": "https://github.com/zhongxy823/yap-cli.git",
+  "author": "zhongxy823",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "dev": "babel src --watch --out-dir build"
+  },
+  "bin": {
+    "zeus": "bin/yap"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "cross-spawn": "^7.0.2",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^9.0.0",
+    "git-user-name": "^2.0.0",
+    "inquirer": "^7.1.0",
+    "mem-fs-editor": "^6.0.0",
+    "node-fetch": "^2.6.0",
+    "ora": "^4.0.4",
+    "shelljs": "^0.8.3",
+    "which": "^2.0.2",
+    "yaml": "^1.9.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-arrow-functions": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  }
+}
